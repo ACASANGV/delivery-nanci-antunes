@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lanchonete Sabor Caseiro. Confira nosso cardápio e faça seu pedido!">
+  <title>Lanchonete Sabor Caseiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <h1>🍔 Sabor Caseiro</h1>
+    <p>Seu lanche favorito está aqui!</p>
+    <nav>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="apresentacao">
+      <h2>Bem-vindo à nossa lanchonete!</h2>
+      <p>Lanches preparados com carinho e muito sabor.</p>
+      <a class="botao" href="#cardapio">Ver cardápio</a>
+    </section>
+
+    <section id="cardapio" class="cardapio">
+      <h2>Nosso Cardápio</h2>
+
+      <div class="produtos">
+        <article class="produto">
+          <div class="emoji">🍔</div>
+          <h3>X-Burguer</h3>
+          <p>Pão, hambúrguer, queijo e molho.</p>
+          <strong>R$ 16,00</strong>
+          <button onclick="pedir('X-Burguer - R$ 16,00')">
+            Pedir pelo WhatsApp
+          </button>
+        </article>
+
+        <article class="produto">
+          <div class="emoji">🍟</div>
+          <h3>Batata Frita</h3>
+          <p>Porção crocante e saborosa.</p>
+          <strong>R$ 12,00</strong>
+          <button onclick="pedir('Batata Frita - R$ 12,00')">
+            Pedir pelo WhatsApp
+          </button>
+        </article>
+
+        <article class="produto">
+          <div class="emoji">🥤</div>
+          <h3>Refrigerante</h3>
+          <p>Bebida gelada para acompanhar.</p>
+          <strong>R$ 6,00</strong>
+          <button onclick="pedir('Refrigerante - R$ 6,00')">
+            Pedir pelo WhatsApp
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Faça seu pedido!</h2>
+      <p>Escolha seu lanche e fale diretamente conosco.</p>
+      <a class="botao whatsapp"
+         href="https://wa.me/5522999999999"
+         target="_blank" rel="noopener">
+        Conversar pelo WhatsApp
+      </a>
+      <p class="observacao">
+        Endereço e horário: informe aqui os dados da lanchonete.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sabor Caseiro - Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function pedir(produto) {
+      const telefone = "5522999999999";
+      const mensagem = "Olá! Gostaria de pedir: " + produto;
+      const link = "https://wa.me/" + telefone +
+        "?text=" + encodeURIComponent(mensagem);
+
+      window.open(link, "_blank");
+    }
+  </script>
+
+</body>
+</html>

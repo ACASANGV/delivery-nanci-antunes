@@ -1,0 +1,154 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fffaf3;
+  color: #292421;
+  line-height: 1.6;
+}
+
+.topo {
+  background: #35180f;
+  color: white;
+  text-align: center;
+  padding: 28px 16px;
+}
+
+.topo h1 {
+  font-size: 2.2rem;
+}
+
+.topo nav {
+  margin-top: 16px;
+}
+
+.topo nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+.apresentacao {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f5d4a7;
+}
+
+.apresentacao h2,
+.cardapio h2,
+.contato h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 20px;
+  background: #b93820;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cardapio {
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1000px;
+  margin: 28px auto 0;
+}
+
+.produto {
+  background: white;
+  padding: 24px 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px #00000012;
+}
+
+.emoji {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.produto h3 {
+  margin-bottom: 8px;
+}
+
+.produto strong {
+  display: block;
+  color: #b93820;
+  font-size: 1.3rem;
+  margin: 14px 0;
+}
+
+.produto button {
+  background: #168544;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 12px;
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.produto button:hover,
+.whatsapp:hover {
+  background: #106b35;
+}
+
+.contato {
+  text-align: center;
+  padding: 45px 20px;
+  background: #f5d4a7;
+}
+
+.whatsapp {
+  background: #168544;
+}
+
+.observacao {
+  margin-top: 22px;
+}
+
+footer {
+  background: #35180f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 650px) {
+  .topo h1 {
+    font-size: 1.8rem;
+  }
+
+  .produtos {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+  }
+
+  .apresentacao h2,
+  .cardapio h2,
+  .contato h2 {
+    font-size: 1.5rem;
+  }
+}
